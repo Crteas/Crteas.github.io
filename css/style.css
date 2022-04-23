@@ -1,0 +1,37 @@
+@import "./reset.css";
+@import "./variable.css";
+@import "./status-bar.css";
+@import "./main.css";
+@import "./bottom.css";
+/*폰트 불러오기*/
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
+body {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  color: var(--font-color);
+  font-family: "Cute Font", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hidden {
+  display: none;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
